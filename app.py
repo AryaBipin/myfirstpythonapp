@@ -25,7 +25,7 @@ def upload_image():
     file.save(os.path.join(app.config['UPLOAD_FOLDER'], "filename.jpg"))
         #print('upload_image filename: ' + filename)
     flash('Image successfully uploaded and displayed below')
-    img = Image.open(r"D:\Adfolks\Python\images\Adlogo1.png")
+    img = Image.open(r"static\uploads\\Adlogo2.png")
     background = Image.open(r"static\uploads\\filename.jpg")
     background.paste(img, (0, 0), img)
     mask = Image.new('L', background.size)
